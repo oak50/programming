@@ -1,0 +1,61 @@
+# task 1
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+# 1 - 4
+
+x = np.linspace(0,1,50)
+y = np.log(x)
+z = np.exp(x)
+plt.scatter(x,y)
+plt.scatter(x,z)
+plt.show()
+
+# 6 - 7
+
+x = np.linspace(0,1,50)
+y = np.log(x)
+z = np.exp(x)
+plt.scatter(x,y,label="Natural Log")
+plt.scatter(x,z,label="Exponential")
+plt.xlabel("x")
+plt.ylabel("y")
+plt.title("Log and exponential functions")
+
+plt.legend(loc = 'lower right')
+plt.show()
+
+# task 2
+
+# 8 - 9
+
+x = np.linspace(-6.5,6.5,100)
+y = np.sin(x)
+z = np.cos(x)
+plt.scatter(x,y)
+plt.scatter(x,z)
+plt.show()
+
+# 11
+
+x = np.linspace(-6.5,6.5,100)
+y = np.sin(x)
+z = np.cos(x)
+plt.plot(x,y)
+plt.plot(x,z)
+plt.show()
+
+# 12
+
+x = np.linspace(-6.5,6.5,50)
+y = np.sin(x)
+z = np.cos(x)
+plt.plot(x,y,label="sine")
+plt.plot(x,z,label="cosine")
+plt.xlabel("x")
+plt.ylabel("y")
+plt.title("Cosine and Sine")
+
+plt.legend(loc = 'lower left')
+plt.show()
